@@ -1,0 +1,340 @@
+
+
+body{
+  width: 100%;
+  height: 100vh;
+} 
+ 
+
+img{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    object-fit:fill;
+
+}
+
+.top{
+    /* border: 2px solid white; */
+    width: 400px;
+    height: 73px;
+    margin-left:  200px;
+}
+.parent-container {
+    display: flex; 
+    align-items: center; 
+    /* margin-bottom: 20px;  */
+  }
+  
+  .artist , .name{
+   margin: 10px;
+   color: white;
+  }
+   .artist{
+    font-size: 18px; 
+    /* margin: 20px; */
+  } 
+  .name{
+    font-size: 14px; 
+    /* margin: 20px; */
+  } 
+
+  .container2{
+
+    position: absolute;
+    width: 480px;
+    height: 585.24px;
+    top: 101px;
+    left: 874px;
+    gap: 32px;
+    opacity: 0px;
+    
+
+  }
+  .selected-image{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 20px;
+  }
+  .two-text{
+    font-size: 25px;
+    margin-left: 210px;
+    color: white;
+  }
+  .top-tracks{
+    margin-left: 50px;
+  }
+
+ .search-container{
+  position: relative;
+  /* display: inline-block; */
+  width: 10%;
+   left: 190px;
+   /* border-radius: 40px; */
+   width: 400px;
+   height:50px;
+   margin: 10px;
+ }
+ .search-input{
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(248, 246, 246);
+  background-color:lightgray;
+
+ }
+
+ #gsearch {
+  /* padding: 1px 4px 1px 1px;  */
+  width: 100%;
+  /* box-sizing: border-box; */
+}
+
+.search-container i {
+  position: absolute;
+  right: 1px; 
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px; 
+  /* color: #aaa;  */
+  /* pointer-events: none;  */
+}
+ 
+
+
+
+.seek-bar {
+  width: 100%;
+  height: 5px; 
+  background: white; 
+  appearance: none;
+  border-radius: 20px;
+}
+
+.seek-bar::-webkit-slider-thumb {
+  appearance: none; 
+  width: 12px; 
+  height: 12px; 
+  background: white; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+/* For Firefox */
+/* .seek-bar::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: rgb(12, 12, 12);
+  border-radius: 50%;
+  cursor: pointer;
+} */
+
+
+
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 20px;
+
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  color: rgb(17, 2, 2); /* Adjust color as needed */
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.ellipsis{
+  position: relative;
+  right: 80px;
+}
+.volume{
+  position: relative;
+  left: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.player-controls button {
+  background-color: #fff; /* White background */
+  border: none; /* Remove default border */
+  border-radius: 50%; /* Circle shape */
+  width: 40px; /* Width of the button */
+  height: 40px; /* Height of the button */
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 18px; /* Icon size */
+  color: #000; /* Icon color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Style for the icons */
+.player-controls .fas {
+  font-size: 20px; /* Adjust font size of icons */
+}
+
+
+.active-tab {
+  font-weight: bold;
+  border-bottom: 2px solid #faf4f4; /* or any style to highlight the active tab */
+}
+
+ 
+
+.spotify-logo{
+  position:absolute;
+  width: 133.41px;
+  height: 40px;
+  /* top: 32px; */
+  left: 32px;
+  /* padding: 0.47px 0.94px 0.12px 0.94px; */
+  /* gap: 0px; */
+  /* opacity: 0px; */
+  border-radius: 50%;
+  border: none;
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+
+}  
+
+
+
+
+
+
+
+
+
+.top {
+  /* border: 2px solid white; */
+  /* width: 400px;
+  height: 80px; */
+  display: flex; 
+  /* Flexbox for layout */
+  padding: 10px; 
+  /* Add padding for spacing */
+  /* box-sizing: border-box;  */
+  /* Ensure padding and border are included in the width and height */
+}
+
+.parent-container {
+  /* display: flex;  */
+  /* align-items: center;  */
+  flex: 1; 
+  /* Take available space */
+}
+
+.artist-name-container {
+  /* display: flex; */
+   /* Flexbox for aligning artist and song name */
+  /* flex-direction: column; */
+   /* Stack artist and name vertically */
+  flex: 1;
+   /* Take available space */
+}
+
+.song-duration{
+  color: #faf4f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+  body{
+    width: 100%;
+    height:100vh;
+    background-color:dimgrey;
+  }
+  .background{
+    height: 125vh;
+  }
+  .background ,.two-text {
+    font-size: 25px;
+    color: white;
+    margin: 1;
+  }
+  .top{
+    /* border: 2px solid white; */
+    width: 400px;
+    height: 73px;
+    margin-left:  100px;
+    margin-top: 10px;
+}
+.search-container{
+ 
+   left: 90px; 
+   width: 390px;
+   height:50px;
+   margin: 10px;
+ }
+.search-input{
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid rgb(248, 246, 246);
+  background-color:lightgray;
+
+ }
+  .spotify-logo{
+   
+    width: 130.41px;
+    height: 40px;
+    left: 8px;
+   
+   
+  
+  }  
+  
+  .container2{
+
+    position: absolute;
+    width: 480px;
+    height: 85.24px;
+    top: 101px;
+    left: 60px;
+    gap: 2px;
+    opacity: 0px;
+    margin-top: 660px;
+
+  }
+  .selected-image{
+  
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    object-fit:fill;
+
+  }
+  .name ,.artist{
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+  }
+  
+}
